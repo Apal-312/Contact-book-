@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Book</h1>
+      <form id="contact-form">
+        <input
+          type="text"
+          class="contact-input"
+          placeholder="First Name"
+          required
+        />
+        <input
+          type="text"
+          class="contact-input"
+          placeholder="Last Name"
+          required
+        />
+        <input
+          type="text"
+          class="contact-input"
+          placeholder="Phone Number"
+          required
+        />
+        <input
+          type="text"
+          class="contact-input"
+          placeholder="Photo URL"
+          required
+        />
+        <button type="button" class="btn-add">Add Contact</button>
+      </form>
+      <ul class="contact-list"></ul>
+    </div>
+    <div class="edit-modal" style="display: none">
+      <input type="text" class="edit-input" placeholder="First Name" />
+      <input type="text" class="edit-input" placeholder="Last Name" />
+      <input type="text" class="edit-input" placeholder="Phone Number" />
+      <input type="text" class="edit-input" placeholder="Photo URL" />
+      <button class="btn-save-edit">Save Changes</button>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

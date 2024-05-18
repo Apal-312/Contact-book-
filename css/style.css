@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  background-image: url("https://kalix.club/uploads/posts/2023-12/1702409568_kalix-club-p-fon-leto-plyazh-instagram-66.jpg"); /* Добавляем изображение фона */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; /* Убираем отступы */
+}
+
+.container {
+  background: white;
+  padding: 20px; /* Внутренние отступы */
+  border-radius: 5px; /* Скругляем углы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+  width: 400px;
+  text-align: center; /* Центрируем текст */
+}
+
+form {
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+form input {
+  margin: 10px 0; /* Отступы сверху и снизу */
+  padding: 10px; /* Внутренние отступы */
+  width: 100%;
+  box-sizing: border-box; /* Учитываем отступы и границы в ширине */
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Указатель курсора */
+  transition: background 0.3s, transform 0.2s; /* Добавляем анимацию */
+}
+
+button:hover {
+  background: #218838; /* Изменяем цвет фона при наведении */
+  transform: scale(1.05); /* Добавляем масштабирование при наведении */
+}
+
+.contact-item {
+  border: 1px solid #ddd; /* Граница */
+  padding: 10px;
+  border-radius: 5px; /* Скругленные углы */
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-info {
+  flex-grow: 1; /* Заполняем оставшееся пространство */
+  text-align: left;
+}
+
+.contact-actions {
+  display: flex;
+  align-items: center;
+}
+
+.contact-actions button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px; /* Скругленные углы */
+  cursor: pointer; /* Указатель курсора */
+  transition: background 0.3s, transform 0.2s; /* Добавляем анимацию */
+}
+
+.contact-actions .edit {
+  background: #ffc107;
+}
+
+.contact-actions .delete {
+  background: #dc3545;
+  color: white;
+}
+
+.edit-modal {
+  position: fixed; /* Фиксированное позиционирование */
+  top: 50%; /* Центрируем по вертикали */
+  left: 50%; /* Центрируем по горизонтали */
+  transform: translate(-50%, -50%); /* Сдвигаем на половину ширины и высоты */
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Отступы между элементами */
+}
